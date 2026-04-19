@@ -1,0 +1,30 @@
+Hallazgos
+
+- Se realizó la ejecución de 4 features en paralelo y obteniendo un total de 8 escenarios ejecutados, si errores
+
+- Todas las peticiones HTTP retornaron un código 200, lo cual indico el éxito en las operaciones del API.
+
+- Se realizo el flujo completo solicitado:
+
+      - Creación de una mascota
+      - Consulta por ID
+      - Actualización de mascosta
+      - Consulta por estado
+
+- Se hizo uso de archivos csv, permitiendo la ejecución de multiples escenarios de forma parametrizada
+
+- El tiempo de respuesta por ejecución de los escenarios se encuentra aproximadamente en un rango de 295 ms a 2089 ms por request, se observo que la operación presenta el mejor rendimiento y la consulta poor ID muestra el mayor tiempo se respuesta
+
+- Se observa que el feature de consulta por ID presenta mayor tiempo de ejecución, lo que puede indicar mayor latencia en este endpoint o dependencia de datos previamente creados.
+
+
+
+
+
+
+
+Conclusiones
+
+La API funciona correctamente y responde de manera adecuada a las operaciones CRUD bajo ejecución automatizada con Karate, evidenciando estabilidad y ausencia de errores funcionales.
+
+Algo que se puede mejorar seria la gestión de los datos de prueba, dado que el uso de ID fijos puede generar la dependencias entre escenarios y posibles conflictos en ejecuciones paralelas.
