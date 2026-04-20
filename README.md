@@ -1,4 +1,4 @@
-# Prueba E2E
+# Prueba Api
 Autor:  Angie Alvarado
 
 Prueba de automatización creada usando Karate Framework
@@ -9,7 +9,7 @@ La herramientas utilizadas para la creación de este proyecto son:
 
 - IntelliJ IDEA 
 - Java JDK 17 
-- Mave 3.9.1
+- Maven 3.9.1
 
 
 
